@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fetch = require('node-fetch');
 const Parser = require('rss-parser');
 const TurndownService = require('turndown');
