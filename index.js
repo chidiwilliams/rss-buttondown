@@ -1,7 +1,7 @@
-import fetch from 'node-fetch';
-import Parser from 'rss-parser';
-import TurndownService from 'turndown';
-import dotenv from 'dotenv';
+const fetch = require('node-fetch');
+const Parser = require('rss-parser');
+const TurndownService = require('turndown');
+const dotenv = require('dotenv');
 
 dotenv.config();
 
