@@ -8,6 +8,12 @@ Publishes recent posts from an RSS feed to Buttondown.
 npm i https://github.com/chidiwilliams/rss-buttondown
 ```
 
+## Usage
+
+```bash
+rss-buttondown
+```
+
 ## Environment variables
 
 - `RSS_URL`: URL of the RSS feed
