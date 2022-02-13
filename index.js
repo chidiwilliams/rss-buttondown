@@ -29,7 +29,9 @@ async function sendDrafts() {
     return;
   }
 
-  const subject = 'Recent posts: ' + recentItems.map((item) => item.title).join(', ');
+  const subject =
+    (recentItems.length > 1 ? 'Recent posts: ' : '') +
+    recentItems.map((item) => item.title).join(', ');
   const body = recentItems
     // Convert HTML back to Markdown, Buttondown doesn't play well with raw HTML
     .map((item) => ({ item, content: turndownService.turndown(item.content) }))
