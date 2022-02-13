@@ -24,6 +24,11 @@ async function sendDrafts() {
     (item) => now.getTime() - new Date(item.pubDate).getTime() < maxRecentPostAge,
   );
 
+  console.log(`Found ${recentItems.length} new post(s)`);
+  if (recentItems.length === 0) {
+    return;
+  }
+
   const subject = 'Recent posts: ' + recentItems.map((item) => item.title).join(', ');
   const body = recentItems
     // Convert HTML back to Markdown, Buttondown doesn't play well with raw HTML

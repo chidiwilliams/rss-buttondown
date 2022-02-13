@@ -1,6 +1,6 @@
 # rss-buttondown
 
-Publishes recent posts from an RSS feed to Buttondown.
+Creates Buttondown newsletter drafts from an RSS feed.
 
 ## Installation
 
