@@ -2,6 +2,12 @@
 
 Publishes recent posts from an RSS feed to Buttondown.
 
+## Installation
+
+```bash
+npm i https://github.com/chidiwilliams/rss-buttondown
+```
+
 ## Environment variables
 
 - `RSS_URL`: URL of the RSS feed
